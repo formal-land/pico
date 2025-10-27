@@ -82,6 +82,10 @@ impl<F: Field> SymbolicConstraintFolder<F> {
     pub fn constraints(self) -> Vec<SymbolicExpression<F>> {
         self.constraints
     }
+
+    pub fn constraints_iter(&self) -> impl Iterator<Item = &SymbolicExpression<F>> {
+        self.constraints.iter()
+    }
 }
 
 impl<F: Field> ScopedBuilder for SymbolicConstraintFolder<F> {}

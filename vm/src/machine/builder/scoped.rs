@@ -1,6 +1,8 @@
 use p3_air::{AirBuilder, FilteredAirBuilder};
 
 pub trait ScopedBuilder {
+    fn log(&mut self, _message: &str) {}
+
     #[allow(unused)]
     fn enter_scope(&mut self, scope: impl AsRef<str>) {}
     fn exit_scope(&mut self) {}

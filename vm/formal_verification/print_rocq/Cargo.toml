@@ -1,0 +1,15 @@
+[package]
+name = "print_rocq"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "print_rocq"
+path = "src/main.rs"
+
+[dependencies]
+p3-air.workspace = true
+p3-field.workspace = true
+p3-goldilocks.workspace = true
+p3-uni-stark.workspace = true
+pico-vm.workspace = true

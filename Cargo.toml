@@ -1,5 +1,5 @@
 [workspace]
-members = ["derive", "vm", "sdk/*", "scripts", "gnark/field-ffi", "perf"]
+members = ["derive", "vm", "vm/formal_verification/print_rocq", "sdk/*", "scripts", "gnark/field-ffi", "perf"]
 resolver = "2"
 
 [workspace.package]
